@@ -1,0 +1,1 @@
+ls: no se puede acceder a 'archivo_que_no_existe': No existe el archivo o el directorio
