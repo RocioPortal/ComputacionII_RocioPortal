@@ -1,0 +1,19 @@
+import os, time
+
+def crear_hijo(nombre):
+    pid = os.fork()
+    if pid == 0:
+        print(f"{nombre}. PID: {os.getpid()}, PPID: {os.getppid()}")
+        time.sleep(2)
+        print(f"{nombre} finaliza.")
+        os._exit(0)
+    os.waitpid(pid, 0)  # El padre espera al hijo
+
+def main():
+    print(f"Proceso padre. PID: {os.getpid()}")
+    crear_hijo("Primer hijo")
+    crear_hijo("Segundo hijo")
+    print("Padre finaliza.")
+
+if __name__ == "__main__":
+    main()
