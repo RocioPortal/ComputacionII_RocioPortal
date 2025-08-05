@@ -1,0 +1,5 @@
+# Carpeta del entorno virtual de Python
+venv/
+
+# Caché de Python
+__pycache__/

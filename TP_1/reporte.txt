@@ -1,0 +1,17 @@
+========================================
+REPORTE FINAL DE ANÁLISIS BIOMÉTRICO
+========================================
+
+1. Resumen de la Cadena
+-------------------------------------
+Total de bloques: 60
+Bloques con alertas: 9
+Integridad de la cadena: Verificada
+
+2. Promedios Generales
+-------------------------------------
+- Frecuencia Cardíaca: 139.92 lpm
+- Presión Arterial:    171.47 / 90.43 mmHg (Sist/Diast)
+- Saturación de Oxígeno: 91.69 %
+
+========================================
