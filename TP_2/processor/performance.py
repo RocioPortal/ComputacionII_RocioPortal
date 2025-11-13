@@ -42,15 +42,11 @@ def analyze_performance(url: str) -> Dict[str, Any]:
             })
             
         except Exception as e:
-            # Esto es NORMAL para peticiones que no tienen body
-            # (como redirecciones 301 o 304).
-            # Igual la contamos como una petición de tamaño 0.
             network_requests.append({
                 "url": response.url,
                 "status": response.status,
                 "size": 0
             })
-            # Imprimimos una nota en la Terminal 1
             print(f"  [Info performance.py] Petición sin body (Status {response.status}).")
 
 
@@ -59,12 +55,10 @@ def analyze_performance(url: str) -> Dict[str, Any]:
             browser = p.chromium.launch(headless=True)
             page = browser.new_page()
             
-            # Registrar el callback 'response'
             page.on("response", on_response)
             
             start_time = time.time()
             
-            # Ir a la URL, esperar a que la red esté inactiva
             page.goto(url, wait_until="networkidle", timeout=60000)
             
             load_time_ms = int((time.time() - start_time) * 1000)
