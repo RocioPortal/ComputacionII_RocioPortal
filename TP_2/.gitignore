@@ -1,0 +1,19 @@
+# Ignorar el entorno virtual de Python
+venv/
+/venv/
+*.venv/
+
+# Ignorar los archivos compilados de Python y la caché
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignorar archivos de IDEs (opcional pero recomendado)
+.vscode/
+.idea/
+
+# Ignorar archivos de sistema operativo
+.DS_Store
+Thumbs.db
+
+.pytest_cache

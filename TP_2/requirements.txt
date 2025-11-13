@@ -1,0 +1,10 @@
+aiohttp
+beautifulsoup4
+lxml
+Pillow
+playwright
+async-lru           # Para el caché en memoria con TTL
+aiolimiter          # Para el rate limiting
+pytest              # Para el testing
+pytest-asyncio      # Para testing asíncrono
+requests
