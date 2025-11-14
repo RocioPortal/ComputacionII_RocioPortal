@@ -1,10 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
 """
-TP2 - tests/test_api.py
-
-(Bonus) Test de integración simple para el endpoint /scrape.
 NOTA: Este test asume que AMBOS servidores (Parte A y B)
 están corriendo en sus puertos default (8000 y 9000) en localhost.
 """
@@ -16,7 +10,7 @@ import asyncio
 # Configuración del test
 SCRAPER_HOST = "127.0.0.1"
 SCRAPER_PORT = 8000
-TEST_URL = "https://example.com" # Usar una URL simple y rápida
+TEST_URL = "https://example.com"
 
 BASE_URL = f"http://{SCRAPER_HOST}:{SCRAPER_PORT}"
 
